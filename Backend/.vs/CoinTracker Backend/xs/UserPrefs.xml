@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{E83E5D7C-616A-4DA8-AB9C-0FAC1F63FB61}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+    <Files>
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Models/User.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="appsettings.json" Line="12" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CoinTracker Backend" expanded="True">
+            <Node name="NuGet.Config files" expanded="True" />
+            <Node name="CoinTracker Backend" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CoinTracker_220Backend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

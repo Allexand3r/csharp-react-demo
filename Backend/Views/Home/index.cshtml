@@ -1,0 +1,16 @@
+﻿<!-- Views/Home/index.cshtml -->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Enter your name</h2>
+
+<form asp-action="Index" method="post">
+    <input type="text" name="name" placeholder="Your name" />
+    <button type="submit">Save</button>
+</form>
+
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}
