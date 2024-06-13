@@ -150,3 +150,5 @@
 /Users/aleksandr/Desktop/CTryHard/Backend/obj/Debug/net7.0/CoinTracker Backend.genruntimeconfig.cache
 /Users/aleksandr/Desktop/CTryHard/Backend/obj/Debug/net7.0/ref/CoinTracker Backend.dll
 /Users/aleksandr/Desktop/CTryHard/Backend/obj/Debug/net7.0/CoinTrac.EE566844.Up2Date
+/Users/aleksandr/Desktop/CTryHard/Backend/bin/Debug/net7.0/BCrypt.Net-Next.dll
+/Users/aleksandr/Desktop/CTryHard/Backend/obj/Debug/net7.0/CoinTracker Backend.sourcelink.json

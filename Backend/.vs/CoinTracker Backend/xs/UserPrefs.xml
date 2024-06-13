@@ -2,13 +2,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
     <Files>
       <File FileName="Controllers/HomeController.cs" />
       <File FileName="Models/User.cs" />
       <File FileName="Startup.cs" />
       <File FileName="Program.cs" />
       <File FileName="appsettings.json" Line="12" Column="22" />
+      <File FileName=".gitignore" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,7 @@
             <Node name="CoinTracker Backend" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name=".gitignore" selected="True" />
             </Node>
           </Node>
         </State>
