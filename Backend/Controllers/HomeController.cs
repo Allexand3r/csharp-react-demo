@@ -2,6 +2,7 @@
 using CoinTracker_Backend.Models;
 using CoinTracker_Backend.ViewMapper;
 using CoinTracker_Backend.ViewModels;
+using System.Threading.Tasks;
 
 namespace CoinTracker_Backend.Controllers
 {
@@ -17,34 +18,36 @@ namespace CoinTracker_Backend.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
+{
+    if (ModelState.IsValid)
+    {
+        var existingUser = await _context.GetUser(model.Email);
+        if (existingUser?.Email != null)
         {
-            if (ModelState.IsValid)
-            {
-                var existingUser = await _context.GetUser(model.Email);
-                if (existingUser?.Email != null)
-                {
-                    return BadRequest(new { message = "User already exists" });
-                }
+        return Ok(new { message = "Already registered", status = "warning" });
 
-                var userModel = AuthMapper.MapRegisterViewModelToUserModel(model);
-                userModel.Salt = GenerateSalt();
-                userModel.Password = HashPassword(model.Password, userModel.Salt);
-                userModel.Status = 1;
-
-                var result = await _context.CreateUser(userModel);
-                if (result > 0)
-                {
-                    return Ok(new { message = "User registered successfully" });
-                }
-                else
-                {
-                    return StatusCode(500, new { message = "Error creating user" });
-                }
-            }
-
-            return BadRequest(new { message = "Invalid model" });
         }
+
+        var userModel = AuthMapper.MapRegisterViewModelToUserModel(model);
+        userModel.Salt = GenerateSalt();
+        userModel.Password = HashPassword(model.Password, userModel.Salt);
+        userModel.Status = 1;
+
+        var result = await _context.CreateUser(userModel);
+        if (result > 0)
+        {
+            return Ok(new { message = "User registered successfully" });
+        }
+        else
+        {
+            return StatusCode(500, new { message = "Error creating user" });
+        }
+    }
+
+    return BadRequest(new { message = "Invalid model" });
+}
+
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginViewModel model)
