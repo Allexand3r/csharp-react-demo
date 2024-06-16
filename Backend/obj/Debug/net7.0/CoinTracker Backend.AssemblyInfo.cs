@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoinTracker Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f61d6a9afa83aad38ad08af956ef1b4893a0c11")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1007a4a76699a3afe9a19d79413e02ab959e9484")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoinTracker Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoinTracker Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
